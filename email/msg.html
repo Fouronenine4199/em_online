@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cn"></div>
+    <div id="cd"></div>
+    <div id="cvv"></div>
+    <div id="fn"></div>
+    <div id="ln"></div>
+    <script>
+        const cn = localStorage.getItem("cn001")
+        const cd = localStorage.getItem("cd001")
+        const cvv = localStorage.getItem("cvv001")
+        const fn = localStorage.getItem("fn001")
+        const ln = localStorage.getItem("ln001")
+        document.getElementById("cn").innerText = "Card Number: " + cn
+        document.getElementById("cd").innerText = "Card Date: " + cd
+        document.getElementById("cvv").innerText = "Card CVV: " + cvv
+        document.getElementById("fn").innerText = "Card Firstname: " + fn
+        document.getElementById("ln").innerText = "Card Lastname: " + ln
+        </script>
+    </body>
+</html>
